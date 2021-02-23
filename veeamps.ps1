@@ -1,3 +1,26 @@
+<#
+.Synopsis
+    Automate Backups with Start-VBRZip in Powershell (Veeam Backup Free Edition)
+    For updated help and examples refer to -Online version.
+ 
+.DESCRIPTION
+    Automate Backups with Start-VBRZip in Powershell (Veeam Backup Free Edition)
+    For updated help and examples refer to -Online version.
+    
+.NOTES   
+    Veeam_BackupAllVMs (And send email report with details of warnings/errors)
+    Author: iAmVegas
+    Version: 2.0
+    DateCreated: 2018-Apr-25
+    DateUpdated: 2021-Feb-23
+
+.LINK to Original Author
+    https://thesysadminchannel.com/automate-backups-start-vbrzip-powershell-veeam-backup-free-edition -
+
+.EXAMPLE
+    either start directly in Powershell or the included .bat file that can be used to access via Scheduled Task
+#>
+
 # Add the Powershell Snapin for Veeam
 if ((Get-PSSnapin -Name VeeamPSSNapin -ErrorAction SilentlyContinue) -eq $null) {
     Add-PSSnapin VeeamPSSNapin 
