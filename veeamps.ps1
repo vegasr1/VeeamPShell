@@ -125,6 +125,16 @@ Add-Content $fileName "</tr>"
 Function writeHtmlFooter 
 { 
 param($fileName) 
+Add-Content $fileName "<tr bgcolor=#CCCCCC>" 
+Add-Content $fileName "<td width='10%' align='center'>VM Name</td>" 
+Add-Content $fileName "<td width='10%' align='center'>Status</td>"
+Add-Content $fileName "<td width='10%' align='center'>Time</td>" 
+Add-Content $fileName "<td width='10%' align='center'>Size</td>"  
+Add-Content $fileName "<td width='10%' align='center'></td>"
+Add-Content $fileName "</tr>"
+Add-Content $fileName "<tr bgcolor=#CCCCCC>" 
+Add-Content $fileName "<td width='100%' colspan='5' align='center'>Original Work by <a href='https://thesysadminchannel.com/automate-backups-start-vbrzip-powershell-veeam-backup-free-edition/'>TheSysadminChannel</a> / Modified for Function by iAMVegas</td>" 
+Add-Content $fileName "</tr>"
 Add-Content $fileName "</table>" 
 Add-Content $fileName "</body>" 
 Add-Content $fileName "</html>" 
